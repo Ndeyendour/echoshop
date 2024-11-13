@@ -187,6 +187,11 @@ app.get('/products/filter', async (req, res) => {
   }
 });
 
+
+app.get('/', (req, res) => {
+  res.send('Bienvenue sur l\'API de mon magasin !');
+});
+
 // Démarrer le serveur
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

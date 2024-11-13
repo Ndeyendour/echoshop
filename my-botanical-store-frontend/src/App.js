@@ -7,7 +7,7 @@ import CheckoutPage from './components/CheckoutPage';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProducList from './pages/ProductList';
-import ProductDetail from './pages/ProductDetail';
+// import ProductDetail from './pages/ProductDetail';
 import CartProvider from './pages/CartContext'
 import { FavoritesProvider } from './pages/FavoritesContext';
 import FavoritesPage from './pages/FavoritesPage';
@@ -34,7 +34,7 @@ function App() {
           <Route path='/product' element={<ProducList />} />
           <Route path='/favoris' element={<FavoritesPage />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/product/:id' element={<ProductDetail />} />
+          {/* <Route path='/product/:id' element={<ProductDetail />} /> */}
           <Route path='/contact' element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
