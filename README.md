@@ -12,7 +12,7 @@ My Botanical Store est une boutique en ligne dédiée aux passionnés de plantes
 
 ![Page d'Accueil](./images/ac.PNG)
 ![Alt text](/images/ac.PNG?raw=true "Optional Title")
-![image alt]('url("images/ac.png")')
+![image alt]('url("https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG")')
 ### 2. Liste des Produits (ProductList)
 
 Sur la **page des produits**, les utilisateurs peuvent :
