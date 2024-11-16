@@ -70,7 +70,7 @@ La **page de contact** permet aux utilisateurs de soumettre des questions ou des
 
 
 
-![image alt](https://github.com/Ndeyendour/echoshop/blob/a72d6c07d978124c33dab4179b32b7081f11c4bb/my-botanical-store-frontend/public/images/panier.PNG)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/c35452929e63fbec8b5e941feefc723a44de3c48/my-botanical-store-frontend/public/images/Capture.PNG)
 
 ---
 
