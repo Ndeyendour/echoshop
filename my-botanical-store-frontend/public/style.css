@@ -72,6 +72,16 @@ button:hover {
   font-size: 18px;
 } */
 /* Réduction du margin-top sur les petits écrans */
+.navbar-toggler {
+  margin-top: 0px !important; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* À partir des écrans moyens (≥768px), supprimer le margin-top */
+@media (min-width: 768px) {
+  .navbar-toggler {
+    margin-top: 0 !important;
+  }
+}
 
 
 .widget a {
