@@ -5,6 +5,9 @@ import cors from 'cors';
 import path from 'path';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+dotenv.config();
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
@@ -14,13 +17,13 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // Configuration de l'application Express
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 // Assurez-vous que cette ligne est présente pour servir les fichiers statiques
-app.use('/assets', express.static('assets'));
-
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Middleware
 // a remplacer app.use(cors()); par app.use(cors({
@@ -30,12 +33,16 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Servir des fichiers statiques à partir du dossier 'assets'
-app.use('/assets', express.static('assets'));
-
-// Connexion à MongoDB sans options obsolètes
-mongoose.connect('mongodb://localhost/mydb')
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+// Connexion à MongoDB avec l'URI de connexion MongoDB Atlas
+mongoose.connect(process.env.MONGODB_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log('MongoDB connected to database:', process.env.MONGODB_URL);
+}).catch((err) => {
+  console.error('MongoDB connection error:', err);
+});
 
 // Définition du modèle de produit
 const productSchema = new mongoose.Schema({
@@ -90,16 +97,18 @@ app.get('/protected', authenticateToken, (req, res) => {
 });
 
 // Routes
-
 // Récupérer tous les produits
 app.get('/products', async (req, res) => {
   try {
-    const products = await Product.find();
-    res.json(products);
+    // Cette fonction va chercher les produits dans la base de données "test"
+    const products = await Product.find();  // Cela va interroger la collection 'products' dans la base de données par défaut ('test')
+    res.json(products);  // Renvoie les produits sous forme de JSON
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 });
+
+
 
 // Ajouter un nouveau produit
 app.post('/products', async (req, res) => {
