@@ -11,7 +11,7 @@ My Botanical Store est une boutique en ligne dédiée aux passionnés de plantes
 
 
 
-![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/62a24aa44db00a6270ed3f433d9a817315737fb5/my-botanical-store-frontend/public/images/AC1.PNG)
 ### 2. Liste des Produits (ProductList)
 
 Sur la **page des produits**, les utilisateurs peuvent :
@@ -23,7 +23,7 @@ Sur la **page des produits**, les utilisateurs peuvent :
 - **Affichage des résultats filtrés** : Les produits qui correspondent aux critères de recherche sont dynamiquement filtrés et affichés.
 
   
-![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/AC1.PNG)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/62a24aa44db00a6270ed3f433d9a817315737fb5/my-botanical-store-frontend/public/images/produit.PNG)
 
 ### 3. Panier (Cart)
 
@@ -41,7 +41,7 @@ Voici un aperçu de la fonctionnalité du panier :
 - **Suppression d'articles** : Chaque produit dans le panier possède une option pour le supprimer du panier.
 - **Vue détaillée du panier** : Un récapitulatif du panier, y compris le nom des produits, leur prix, la quantité et le prix total, est affiché.
 
-![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/62a24aa44db00a6270ed3f433d9a817315737fb5/my-botanical-store-frontend/public/images/panier.PNG)
 
 ### 4. Favoris
 
@@ -54,16 +54,10 @@ Voici un aperçu de la fonctionnalité du panier :
 
 - **Vue détaillée du produit** : En cliquant sur l'icône de l'œil, une fenêtre modale s'ouvre, affichant les détails du produit, y compris l'image, la description et le prix.
 - **Produits similaires** : En bas de la fenêtre modale, une liste de produits similaires (dans la même catégorie) est affichée pour aider l'utilisateur à découvrir d'autres produits.
-#### Capture d'écran de la fenêtre modale des détails du produit
 
-![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 
-### 6. Page de Panier
+![image alt](https://github.com/Ndeyendour/echoshop/blob/62a24aa44db00a6270ed3f433d9a817315737fb5/my-botanical-store-frontend/public/images/Dde.PNG)
 
-- **Affichage du panier** : Les utilisateurs peuvent consulter leur panier, voir les produits ajoutés, la quantité et le total.
-- **Mise à jour de la quantité** : Les utilisateurs peuvent ajuster la quantité d'articles dans leur panier.
-- **Suppression d'articles** : Les utilisateurs peuvent supprimer des produits de leur panier.
-- **Total du panier** : Le total est calculé et mis à jour en temps réel en fonction des quantités et des produits ajoutés au panier.
 
 ---
 ### 7. Page de Contact
@@ -77,7 +71,7 @@ La **page de contact** permet aux utilisateurs de soumettre des questions ou des
   - **Confirmation de soumission** : Si le formulaire est valide, un message de succès s'affiche après la soumission.
 
 
-![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/62a24aa44db00a6270ed3f433d9a817315737fb5/my-botanical-store-frontend/public/images/Capture.PNG)
 
 ---
 
