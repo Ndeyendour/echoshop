@@ -72,15 +72,17 @@ button:hover {
   font-size: 18px;
 } */
 /* Réduction du margin-top sur les petits écrans */
+/* Forcer le margin-top du bouton menu sur les petits écrans */
 .navbar-toggler {
-  margin-top: 0px !important; /* Ajustez cette valeur selon vos besoins */
+  margin-top: 0 !important; /* Force à 0 */
+  padding: 0.5rem; /* Ajuster la taille du padding si nécessaire */
 }
 
-/* À partir des écrans moyens (≥768px), supprimer le margin-top */
-@media (min-width: 768px) {
-  .navbar-toggler {
-    margin-top: 0 !important;
-  }
+/* Ajuster le conteneur pour éviter tout débordement */
+.headerHolder .container {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 
