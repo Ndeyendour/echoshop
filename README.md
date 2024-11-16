@@ -10,8 +10,7 @@ My Botanical Store est une boutique en ligne dédiée aux passionnés de plantes
 **page d'accueil** La page d'accueil de My Botanical Store présente un design attractif mettant en avant des plantes d'intérieur et des offres spéciales. Elle inclut un slider avec des promotions, des sections sur les services (livraison gratuite, carte cadeau, support 24/7), et des produits en avant comme les nouveautés et meilleures ventes. Les utilisateurs peuvent facilement ajouter des articles à leur panier ou à leurs favoris, consulter des témoignages clients, et s'inscrire à la newsletter. Les produits sont organisés par catégories et chaque article propose des détails interactifs pour une meilleure expérience d'achat.
 
 
-![Page d'Accueil](./images/ac.PNG)
-![Alt text](/images/ac.PNG?raw=true "Optional Title")
+
 ![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 ### 2. Liste des Produits (ProductList)
 
@@ -22,7 +21,8 @@ Sur la **page des produits**, les utilisateurs peuvent :
 - **Filtrage par prix** : Les utilisateurs peuvent spécifier un prix minimum et un prix maximum pour filtrer les produits par gamme de prix.
 - **Recherche par nom de produit** : Un champ de recherche permet aux utilisateurs de trouver un produit par son nom.
 - **Affichage des résultats filtrés** : Les produits qui correspondent aux critères de recherche sont dynamiquement filtrés et affichés.
-![Page des Produits](./images/product-page.png)
+- 
+![image alt](./images/product-page.png)
 
 ### 3. Panier (Cart)
 
