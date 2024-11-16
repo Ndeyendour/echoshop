@@ -110,9 +110,12 @@ Découvrez EcoShop sur figma : [echoShop dans figma](https://www.figma.com/desig
 
 Ce projet utilise les technologies suivantes :
 
-- **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
-- **Axios** : Pour effectuer des requêtes HTTP et récupérer les produits depuis le backend.
-- **React Modal** : Pour afficher les détails des produits dans une fenêtre modale.
-- **React-Bootstrap** : Pour la gestion des composants UI comme les menus déroulants et les icônes.
-- **React Context API** : Pour gérer l'état global du panier et des favoris à travers toute l'application.
-- **rc-slider** : Pour implémenter un composant de filtrage des prix avec un curseur.
+- **React** 
+- **Axios** 
+- **React Modal** 
+- **React-Bootstrap** 
+- **React Context API** 
+- **rc-slider**
+- **Node js**
+- **Express**
+- **Mongodb**
