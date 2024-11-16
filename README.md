@@ -10,8 +10,7 @@ My Botanical Store est une boutique en ligne dédiée aux passionnés de plantes
 **page d'accueil** La page d'accueil de My Botanical Store présente un design attractif mettant en avant des plantes d'intérieur et des offres spéciales. Elle inclut un slider avec des promotions, des sections sur les services (livraison gratuite, carte cadeau, support 24/7), et des produits en avant comme les nouveautés et meilleures ventes. Les utilisateurs peuvent facilement ajouter des articles à leur panier ou à leurs favoris, consulter des témoignages clients, et s'inscrire à la newsletter. Les produits sont organisés par catégories et chaque article propose des détails interactifs pour une meilleure expérience d'achat.
 
 
-![Page d'Accueil](./images/ac.PNG)
-![Alt text](/images/ac.PNG?raw=true "Optional Title")
+
 ![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 ### 2. Liste des Produits (ProductList)
 
@@ -22,7 +21,9 @@ Sur la **page des produits**, les utilisateurs peuvent :
 - **Filtrage par prix** : Les utilisateurs peuvent spécifier un prix minimum et un prix maximum pour filtrer les produits par gamme de prix.
 - **Recherche par nom de produit** : Un champ de recherche permet aux utilisateurs de trouver un produit par son nom.
 - **Affichage des résultats filtrés** : Les produits qui correspondent aux critères de recherche sont dynamiquement filtrés et affichés.
-![Page des Produits](./images/product-page.png)
+
+  
+![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/AC1.PNG)
 
 ### 3. Panier (Cart)
 
@@ -39,16 +40,14 @@ Voici un aperçu de la fonctionnalité du panier :
 - **Gestion de la quantité** : L'utilisateur peut augmenter ou diminuer la quantité d'un produit directement dans le panier.
 - **Suppression d'articles** : Chaque produit dans le panier possède une option pour le supprimer du panier.
 - **Vue détaillée du panier** : Un récapitulatif du panier, y compris le nom des produits, leur prix, la quantité et le prix total, est affiché.
-#### Capture d'écran de la page du Panier
-![Page du Panier](./images/cart-page.png)
+
+![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 
 ### 4. Favoris
 
 - **Ajout/Retrait des favoris** : Les utilisateurs peuvent ajouter des produits à leurs favoris en cliquant sur une icône cœur. L'état des favoris est stocké et mis à jour dynamiquement.
 
-#### Capture d'écran des Favoris
 
-![Favoris](./images/favorites.png)
 
   
 ### 5. Détails du produit
@@ -57,8 +56,7 @@ Voici un aperçu de la fonctionnalité du panier :
 - **Produits similaires** : En bas de la fenêtre modale, une liste de produits similaires (dans la même catégorie) est affichée pour aider l'utilisateur à découvrir d'autres produits.
 #### Capture d'écran de la fenêtre modale des détails du produit
 
-![Détails du produit](./images/product-detail-modal.png)
-
+![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 
 ### 6. Page de Panier
 
@@ -79,8 +77,7 @@ La **page de contact** permet aux utilisateurs de soumettre des questions ou des
   - **Confirmation de soumission** : Si le formulaire est valide, un message de succès s'affiche après la soumission.
 
 
-
-![Page Contact](./images/contact-page.png)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/caa8606ed9f2c45894d5cb585b21b3947386236c/my-botanical-store-frontend/public/images/ac.PNG)
 
 ---
 
@@ -224,9 +221,12 @@ Les erreurs suivantes peuvent être renvoyées par l'API :
 
 Ce projet utilise les technologies suivantes :
 
-- **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
-- **Axios** : Pour effectuer des requêtes HTTP et récupérer les produits depuis le backend.
-- **React Modal** : Pour afficher les détails des produits dans une fenêtre modale.
-- **React-Bootstrap** : Pour la gestion des composants UI comme les menus déroulants et les icônes.
-- **React Context API** : Pour gérer l'état global du panier et des favoris à travers toute l'application.
-- **rc-slider** : Pour implémenter un composant de filtrage des prix avec un curseur.
+- **React** 
+- **Axios** 
+- **React Modal**
+- **React-Bootstrap** 
+- **React Context API** 
+- **rc-slider**
+- **Node js**
+- **Express**
+- **Mongodb**
