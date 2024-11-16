@@ -23,9 +23,11 @@ app.use('/assets', express.static('assets'));
 
 
 // Middleware
-app.use(cors({
-  origin: 'https://echoshop-frontend.vercel.app'  // URL de votre frontend
-}));app.use(bodyParser.json());
+// a remplacer app.use(cors()); par app.use(cors({
+//   origin: 'https://echoshop-frontend.vercel.app'  // URL de votre frontend
+// })); une fois termine
+app.use(cors());
+app.use(bodyParser.json());
 
 // Servir des fichiers statiques à partir du dossier 'assets'
 app.use('/assets', express.static('assets'));

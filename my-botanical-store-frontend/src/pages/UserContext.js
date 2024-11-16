@@ -1,31 +1,42 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
-// Create UserContext
+// Créer le UserContext
 const UserContext = createContext();
 
-// Custom hook to access user context
+// Hook personnalisé pour accéder au contexte UserContext
 export const useUser = () => useContext(UserContext);
 
-// UserProvider component to provide user state
+// Composant UserProvider pour fournir l'état de l'utilisateur
 export const UserProvider = ({ children }) => {
-  // Check `localStorage` for user data on initial load
+  // État utilisateur avec une fonction de récupération initiale à partir de localStorage
   const [user, setUser] = useState(() => {
+    // Lors du premier rendu, essayer de récupérer l'utilisateur du localStorage
     const storedUser = localStorage.getItem('user');
-    return storedUser ? JSON.parse(storedUser) : null;
+    return storedUser ? JSON.parse(storedUser) : null; // Récupérer l'utilisateur ou null
   });
 
-  // Function to set user data when logged in
+  // Fonction pour se connecter (mettre à jour l'utilisateur)
   const loginUser = (username) => {
-    const userData = { username };
-    setUser(userData);
-    localStorage.setItem('user', JSON.stringify(userData)); // Save user to localStorage
+    const userData = { username }; // Créer l'objet utilisateur
+    setUser(userData); // Mettre à jour l'état
+    localStorage.setItem('user', JSON.stringify(userData)); // Sauvegarder l'utilisateur dans localStorage
   };
 
-  // Function to clear user data when logged out
+  // Fonction pour se déconnecter (supprimer l'utilisateur)
   const logoutUser = () => {
-    setUser(null);
-    localStorage.removeItem('user'); // Remove user from localStorage
+    setUser(null); // Réinitialiser l'état de l'utilisateur
+    localStorage.removeItem('user'); // Supprimer l'utilisateur du localStorage
   };
+
+  // Utiliser useEffect pour synchroniser l'état avec le localStorage
+  useEffect(() => {
+    // Lorsque l'état de l'utilisateur change, mettre à jour le localStorage
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+    } else {
+      localStorage.removeItem('user');
+    }
+  }, [user]); // L'effet se déclenche lorsque l'état `user` change
 
   return (
     <UserContext.Provider value={{ user, loginUser, logoutUser }}>

@@ -6,12 +6,21 @@ export function CartProvider({ children }) {
     // Récupérer les données du panier à partir du `localStorage` au chargement initial
     const [cart, setCart] = useState(() => {
         const storedCart = localStorage.getItem('cart');
-        return storedCart ? JSON.parse(storedCart) : [];
+        try {
+            return storedCart ? JSON.parse(storedCart) : [];
+        } catch (error) {
+            console.error("Error parsing cart from localStorage", error);
+            return [];
+        }
     });
 
     // Utiliser `useEffect` pour sauvegarder le panier dans le `localStorage` à chaque mise à jour
     useEffect(() => {
-        localStorage.setItem('cart', JSON.stringify(cart));
+        if (Array.isArray(cart)) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        } else {
+            console.warn("Cart is not an array", cart);
+        }
     }, [cart]);
 
     const addToCart = (product, quantity = 1) => {

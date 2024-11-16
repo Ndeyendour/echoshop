@@ -237,24 +237,25 @@ function Home(){
 				<div className="imgHolder position-relative w-100 overflow-hidden">
 				<img src={product.imageUrl} alt={product.name} className="img-fluid w-100"/>
 				<ul className="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-					<li className="mr-2 overflow-hidden">
+				<li className="mr-2 overflow-hidden">
 					<a
-						href="javascript:void(0);"
+						href="#"
 						className={`icon-heart d-block ${isFavorite(product._id) ? 'active' : ''}`}
-						onClick={() => toggleFavorite(product)}
+						onClick={(event) => { event.preventDefault(); toggleFavorite(product); }}
 					></a>
-					</li>
-					<li className="mr-2 overflow-hidden">
-					<a href="javascript:void(0);" className="icon-cart d-block" onClick={() => addToCart(product)}></a>
-					</li>
-					<li className="mr-2 overflow-hidden">
-					<a href="javascript:void(0);" className="icon-eye d-block" onClick={() => openProductModal(product)}></a>
-					</li>
-				</ul>
+				</li>
+				<li className="mr-2 overflow-hidden">
+					<a href="#" className="icon-cart d-block" onClick={(event) => { event.preventDefault(); addToCart(product); }}></a>
+				</li>
+				<li className="mr-2 overflow-hidden">
+					<a href="#" className="icon-eye d-block" onClick={(event) => { event.preventDefault(); openProductModal(product); }}></a>
+				</li>
+			</ul>
+
 				</div>
 				<div className="text-center py-5 px-4">
 				<span className="title d-block mb-2">
-					<a href="javascript:void(0);">{product.name}</a>
+					<a href="#">{product.name}</a>
 				</span>
 				<span className="price d-block fwEbold">
 					<del>80.50 $</del>${product.price}
@@ -338,7 +339,7 @@ function Home(){
 							<div className="position-relative">
 								<img src="images/img21.jpg" alt="image description" className="img-fluid w-100"/>
 								<div className="hoverTextBlock position-absolute">
-									<h2 className="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Cactus Plant</a></h2>
+									<h2 className="headingIV playfair fwEbold mb-3"><a href="#">Cactus Plant</a></h2>
 									<span className="txt d-block">( 56 item )</span>
 								</div>
 							</div>
@@ -349,7 +350,7 @@ function Home(){
 							<div className="position-relative">
 								<img src="images/img22.jpg" alt="image description" className="img-fluid w-100"/>
 								<div className="hoverTextBlock position-absolute">
-									<h2 className="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Indoor Plant</a></h2>
+									<h2 className="headingIV playfair fwEbold mb-3"><a href="#">Indoor Plant</a></h2>
 									<span className="txt d-block">( 36 item )</span>
 								</div>
 							</div>
@@ -360,7 +361,7 @@ function Home(){
 							<div className="position-relative">
 								<img src="images/img23.jpg" alt="image description" className="img-fluid w-100"/>
 								<div className="hoverTextBlock position-absolute">
-									<h2 className="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Tropical Plant</a></h2>
+									<h2 className="headingIV playfair fwEbold mb-3"><a href="#">Tropical Plant</a></h2>
 									<span className="txt d-block">( 21 item )</span>
 								</div>
 							</div>
@@ -371,7 +372,7 @@ function Home(){
 							<div className="position-relative">
 								<img src="images/img24.jpg" alt="image description" className="img-fluid w-100"/>
 								<div className="hoverTextBlock position-absolute">
-									<h2 className="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Floor Plant</a></h2>
+									<h2 className="headingIV playfair fwEbold mb-3"><a href="#">Floor Plant</a></h2>
 									<span className="txt d-block">( 18 item )</span>
 								</div>
 							</div>
@@ -382,7 +383,7 @@ function Home(){
 							<div className="position-relative">
 								<img src="images/img25.jpg" alt="image description" className="img-fluid w-100"/>
 								<div className="hoverTextBlock position-absolute">
-									<h2 className="headingIV playfair fwEbold mb-3"><a href="javascript:void(0);">Table Plant</a></h2>
+									<h2 className="headingIV playfair fwEbold mb-3"><a href="#">Table Plant</a></h2>
 									<span className="txt d-block">( 36 item )</span>
 								</div>
 							</div>
@@ -408,22 +409,22 @@ function Home(){
 				<ul className="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
 					<li className="mr-2 overflow-hidden">
 					<a
-						href="javascript:void(0);"
+						href="#"
 						className={`icon-heart d-block ${isFavorite(product._id) ? 'active' : ''}`}
 						onClick={() => toggleFavorite(product)}
 					></a>
 					</li>
 					<li className="mr-2 overflow-hidden">
-					<a href="javascript:void(0);" className="icon-cart d-block" onClick={() => addToCart(product)}></a>
+					<a href="#" className="icon-cart d-block" onClick={() => addToCart(product)}></a>
 					</li>
 					<li className="mr-2 overflow-hidden">
-					<a href="javascript:void(0);" className="icon-eye d-block" onClick={() => openProductModal(product)}></a>
+					<a href="#" className="icon-eye d-block" onClick={() => openProductModal(product)}></a>
 					</li>
 				</ul>
 				</div>
 				<div className="text-center py-5 px-4">
 				<span className="title d-block mb-2">
-					<a href="javascript:void(0);">{product.name}</a>
+					<a href="#">{product.name}</a>
 				</span>
 				<span className="price d-block fwEbold">
 					<del>80.50 $</del>${product.price}

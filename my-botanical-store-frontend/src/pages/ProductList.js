@@ -10,7 +10,10 @@ import Slider from 'rc-slider';
 import { useParams } from 'react-router-dom';
 
 // Applique les styles de modal (requis par react-modal)
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
+if (process.env.NODE_ENV !== 'test') {
+  Modal.setAppElement('#root');
+}
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -88,7 +91,6 @@ function ProductList() {
       setAllProducts(response.data);
       setFilteredProducts(response.data); // Initialiser les produits filtrés avec tous les produits
     } catch (error) {
-      console.error("Erreur lors de la récupération des produits :", error);
     }
   };  
   const handleFilter = () => {
@@ -134,8 +136,8 @@ function ProductList() {
                 <article id="content">
                 <header className="show-head d-flex flex-wrap justify-content-between mb-7">
                     <ul className="list-unstyled viewFilterLinks d-flex flex-nowrap align-items-center">
-                      <li className="mr-2"><a href="javascript:void(0);" className="active"><i className="fas fa-th-large"></i></a></li>
-                      <li className="mr-2"><a href="javascript:void(0);"><i className="fas fa-list"></i></a></li>
+                      <li className="mr-2"><a href="#" className="active"><i className="fas fa-th-large"></i></a></li>
+                      <li className="mr-2"><a href="#"><i className="fas fa-list"></i></a></li>
                       <li className="mr-2">Showing {filteredProducts.length} results</li>
                     </ul>
                     
@@ -170,25 +172,36 @@ function ProductList() {
                           <div className="imgHolder position-relative w-100 overflow-hidden">
                             <img src={product.imageUrl} alt={product.name} className="img-fluid w-100"/>
                             <ul className="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-                              <li className="mr-2 overflow-hidden">
-                                <a
-                                  href="javascript:void(0);"
-                                  className={`icon-heart d-block ${isFavorite(product._id) ? 'active' : ''}`}
-                                  onClick={() => toggleFavorite(product)}
-                                  style={{ textDecoration: 'none' }}
-                                ></a>
-                              </li>
-                              <li className="mr-2 overflow-hidden">
-                                <a href="javascript:void(0);" className="icon-cart d-block" onClick={() => addToCart(product)} style={{ textDecoration: 'none' }}  ></a>
-                              </li>
-                              <li className="mr-2 overflow-hidden">
-                                <a href="javascript:void(0);" className="icon-eye d-block" onClick={() => openProductModal(product)} style={{ textDecoration: 'none' }}  ></a>
-                              </li>
-                            </ul>
+  <li className="mr-2 overflow-hidden">
+    <a
+      href="#"
+      className={`icon-heart d-block ${isFavorite(product._id) ? 'active' : ''}`}
+      onClick={() => toggleFavorite(product)}
+      style={{ textDecoration: 'none' }}
+    ></a>
+  </li>
+  <li className="mr-2 overflow-hidden">
+    <a
+      href="#"
+      className="icon-cart d-block"
+      onClick={() => addToCart(product)}
+      style={{ textDecoration: 'none' }}
+    ></a>
+  </li>
+  <li className="mr-2 overflow-hidden">
+    <a
+      href="#"
+      className="icon-eye d-block"
+      onClick={() => openProductModal(product)}
+      style={{ textDecoration: 'none' }}
+    ></a>
+  </li>
+</ul>
+
                           </div>
                           <div className="text-center py-5 px-4">
                             <span className="title d-block mb-2">
-                              <a href="javascript:void(0); style={{ textDecoration: 'none' }}  ">{product.name}</a>
+                              <a href="#" style={{ textDecoration: 'none' }}  >{product.name}</a>
                             </span>
                             <span className="price d-block fwEbold">
                               <del>80.50 $</del>${product.price}
@@ -205,7 +218,7 @@ function ProductList() {
                 {/* Sidebar */}
                 <aside id="sidebar">
                 <section className="widget overflow-hidden mb-9">
-                    <form action="javascript:void(0);" >
+                    <form action="#" >
                       <fieldset>
                         <input
                           type="search"
@@ -220,17 +233,17 @@ function ProductList() {
                   {/* <section className="widget overflow-hidden mb-9">
 								<h3 className="headingVII fwEbold text-uppercase mb-5">PRODUCT CATEGORIES</h3>
 								<ul className="list-unstyled categoryList mb-0">
-									<li className="mb-5 overflow-hidden"><a href="javascript:void(0);">Dried </a></li>
-									<li className="mb-5 overflow-hidden"><a href="javascript:void(0);">Vegetables </a></li>
-									<li className="mb-4 overflow-hidden"><a href="javascript:void(0);">Fruits </a></li>
-									<li className="mb-5 overflow-hidden"><a href="javascript:void(0);">Juice </a></li>
+									<li className="mb-5 overflow-hidden"><a href="#">Dried </a></li>
+									<li className="mb-5 overflow-hidden"><a href="#">Vegetables </a></li>
+									<li className="mb-4 overflow-hidden"><a href="#">Fruits </a></li>
+									<li className="mb-5 overflow-hidden"><a href="#">Juice </a></li>
 								</ul>
 							</section> */}
                         <section className="widget mb-4" style={{ maxWidth: '300px' }}>
         <h3 className="headingVII fwEbold text-uppercase mb-3">Filter by price</h3>
 
         <form
-          action="javascript:void(0);"
+          action="#"
           className="filter-ranger-form"
           onSubmit={(e) => {
             e.preventDefault();
@@ -305,14 +318,14 @@ function ProductList() {
                                     <section className="widget mb-9">
                                         <h3 className="headingVII fwEbold text-uppercase mb-5">product tags</h3>
                                         <ul className="list-unstyled tagNavList d-flex flex-wrap mb-0">
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Plant</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Floor</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Indoor</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Green</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Healthy</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Cactus</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">House plant</a></li>
-                                            <li className="text-center"><a href="javascript:void(0);" className="md-round d-block">Office tree</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Plant</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Floor</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Indoor</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Green</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Healthy</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Cactus</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">House plant</a></li>
+                                            <li className="text-center"><a href="#" className="md-round d-block">Office tree</a></li>
                                         </ul>
                                     </section>
                   
