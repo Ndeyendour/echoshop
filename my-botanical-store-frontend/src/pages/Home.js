@@ -102,7 +102,18 @@ function Home(){
 		<section className="bannerBlockHolder position-relative">
 			<Slider {...settings}>
 				<div>
-				<div className="align w-100 d-flex align-items-center bgCover" style={{ backgroundImage: 'url("images/b-bg4.jpg")' }}>
+				<div
+					className="align w-100 d-flex align-items-center bgCover"
+					style={{
+						backgroundImage: 'url("images/b-bg4.jpg")',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat',
+						minHeight: '100vh', // Assure une hauteur minimum de 100% de la hauteur de l'écran
+					}}
+					>
+					
+
 					<div className="container position-relative holder pt-xl-10">
 					<div className="row">
 						<div className="col-12 col-xl-7">
