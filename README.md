@@ -39,33 +39,23 @@ Voici un aperçu de la fonctionnalité du panier :
 - **Gestion de la quantité** : L'utilisateur peut augmenter ou diminuer la quantité d'un produit directement dans le panier.
 - **Suppression d'articles** : Chaque produit dans le panier possède une option pour le supprimer du panier.
 - **Vue détaillée du panier** : Un récapitulatif du panier, y compris le nom des produits, leur prix, la quantité et le prix total, est affiché.
-#### Capture d'écran de la page du Panier
-![image alt](https://github.com/Ndeyendour/echoshop/blob/71446eb0c263865fe4eeec21e9d4dbfe4788e994/my-botanical-store-frontend/public/images/produit.PNG)
+
+![image alt](https://github.com/Ndeyendour/echoshop/blob/a72d6c07d978124c33dab4179b32b7081f11c4bb/my-botanical-store-frontend/public/images/panier.PNG)
 
 ### 4. Favoris
 
 - **Ajout/Retrait des favoris** : Les utilisateurs peuvent ajouter des produits à leurs favoris en cliquant sur une icône cœur. L'état des favoris est stocké et mis à jour dynamiquement.
 
-#### Capture d'écran des Favoris
 
-![Favoris](./images/favorites.png)
 
   
 ### 5. Détails du produit
 
 - **Vue détaillée du produit** : En cliquant sur l'icône de l'œil, une fenêtre modale s'ouvre, affichant les détails du produit, y compris l'image, la description et le prix.
 - **Produits similaires** : En bas de la fenêtre modale, une liste de produits similaires (dans la même catégorie) est affichée pour aider l'utilisateur à découvrir d'autres produits.
-#### Capture d'écran de la fenêtre modale des détails du produit
+  
 
-![Détails du produit](./images/product-detail-modal.png)
-
-
-### 6. Page de Panier
-
-- **Affichage du panier** : Les utilisateurs peuvent consulter leur panier, voir les produits ajoutés, la quantité et le total.
-- **Mise à jour de la quantité** : Les utilisateurs peuvent ajuster la quantité d'articles dans leur panier.
-- **Suppression d'articles** : Les utilisateurs peuvent supprimer des produits de leur panier.
-- **Total du panier** : Le total est calculé et mis à jour en temps réel en fonction des quantités et des produits ajoutés au panier.
+![image alt](https://github.com/Ndeyendour/echoshop/blob/a72d6c07d978124c33dab4179b32b7081f11c4bb/my-botanical-store-frontend/public/images/panier.PNG)
 
 ---
 ### 7. Page de Contact
@@ -80,7 +70,7 @@ La **page de contact** permet aux utilisateurs de soumettre des questions ou des
 
 
 
-![Page Contact](./images/contact-page.png)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/a72d6c07d978124c33dab4179b32b7081f11c4bb/my-botanical-store-frontend/public/images/panier.PNG)
 
 ---
 
