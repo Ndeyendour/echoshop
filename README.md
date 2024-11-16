@@ -82,7 +82,7 @@ La **page de contact** permet aux utilisateurs de soumettre des questions ou des
 
 
 
-2. Accédez au répertoire du projet : cd nom-du-depot
+2. Accédez au répertoire du projet : *cd nom-du-depot*
 
 3. Installez les dépendances : *npm* *install* ou *yarn* *install*
 
