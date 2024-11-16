@@ -148,8 +148,10 @@ function Header() {
                                                         ))}
                                                     </ul>
                                                     <p className="cart-total">Total: €{totalPrice.toFixed(2)}</p>
-                                                    <Link to="/cart" className="view-cart-btn">VIEW CART</Link>
-                                                    <button className="checkout-btn" onClick={goToCheckout}>CHECKOUT</button>
+                                                    <h1>
+                                                    <Link to="/cart" className="view-cart-btn">Voir le panier</Link>
+                                                    </h1>
+                                                    <button className="checkout-btn" onClick={goToCheckout}>Passer à la caisse</button>
                                                 </div>
                                             ) : (
                                                 <p>Your cart is empty</p>

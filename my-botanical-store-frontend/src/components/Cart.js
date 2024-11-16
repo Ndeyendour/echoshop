@@ -31,11 +31,9 @@ function Cart() {
             <div className="container">
               <div className="row">
                 <div className="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
-                  <h1 className="headingIV fwEbold playfair mb-4">My Cart</h1>
+                  <h1 className="headingIV fwEbold playfair mb-4">Mon panier</h1>
                   <ul className="list-unstyled breadCrumbs d-flex justify-content-center">
-                    <li className="mr-sm-2 mr-1"><Link to="/">Home</Link></li>
-                    <li className="mr-sm-2 mr-1">/</li>
-                    <li className="mr-sm-2 mr-1"><Link to="/product">Produit</Link></li>
+                    <li className="mr-sm-2 mr-1"><Link to="/">Produit</Link></li>
                     <li className="mr-sm-2 mr-1">/</li>
                     <li className="active">Panier</li>
                   </ul>
@@ -49,11 +47,11 @@ function Cart() {
                 <table className="table cartTable">
                   <thead>
                     <tr>
-                      <th scope="col" className="text-uppercase fwEbold border-top-0">Product</th>
-                      <th scope="col" className="text-uppercase fwEbold border-top-0">Price</th>
-                      <th scope="col" className="text-uppercase fwEbold border-top-0">Quantity</th>
+                      <th scope="col" className="text-uppercase fwEbold border-top-0">Produit</th>
+                      <th scope="col" className="text-uppercase fwEbold border-top-0">Prix</th>
+                      <th scope="col" className="text-uppercase fwEbold border-top-0">Quantite</th>
                       <th scope="col" className="text-uppercase fwEbold border-top-0">Total</th>
-                      <th scope="col" className="text-uppercase fwEbold border-top-0">Remove</th>
+                      <th scope="col" className="text-uppercase fwEbold border-top-0">Supprimer</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -97,7 +95,7 @@ function Cart() {
                   </tbody>
                 </table>
                 <div className="cart-total">
-                  <p><strong>Total Price:</strong> €{totalPrice.toFixed(2)}</p>
+                  <p><strong>Total Prix:</strong> €{totalPrice.toFixed(2)}</p>
                 </div>
               </div>
             </div>

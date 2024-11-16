@@ -108,6 +108,10 @@ Découvrez EcoShop en ligne : [https://echoshop-frontend.vercel.app/](https://ec
 ## Mise à jour du portfolio
 Le portfolio en ligne a été mis à jour avec les dernières réalisations, y compris EcoShop. Vous pouvez consulter le projet et d'autres exemples sur [https://ndeyendour.github.io/prtfolio/#project](https://ndeyendour.github.io/prtfolio/#project) 
 
+---
+ ## Conception et prototypage dans figma
+Découvrez EcoShop sur figma : [echoShop dans figma](https://www.figma.com/design/VBbEK2eOyipe9bwWKPvRnX/Untitled?t=O92XX7zKLXai6ldd-0)
+
 
 
  

@@ -118,8 +118,8 @@ function Contact(){
                   <i className="fas fa-envelope"></i>
                 </span>
                 <strong className="title text-uppercase playfair mb-5 d-block">Email</strong>
-                <a href="mailto:Two-support@Two.lnk" className="d-block">Two-support@Two.lnk</a>
-                <a href="mailto:info@Two.lnk" className="d-block">info@Two.lnk</a>
+                <a href="mailto:Two-support@Two.lnk" className="d-block">mybotanic@gmail.com</a>
+                <a href="mailto:info@Two.lnk" className="d-block">ndeyefatou023@gmail.com</a>
               </li>
             </ul>
           </div>

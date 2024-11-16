@@ -121,8 +121,7 @@ function ProductList() {
                 <div className="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
                   <h1 className="headingIV fwEbold playfair mb-4">Product List</h1>
                   <ul className="list-unstyled breadCrumbs d-flex justify-content-center">
-                    <li className="mr-2"style={{ textDecoration: 'none' }}>Home</li>
-                    <li className="mr-2">/</li>
+                    <li className="mr-2"style={{ textDecoration: 'none' }}></li>
                     <li className="active">Product</li>
                   </ul>
                 </div>
@@ -138,7 +137,7 @@ function ProductList() {
                     <ul className="list-unstyled viewFilterLinks d-flex flex-nowrap align-items-center">
                       <li className="mr-2"><a href="#" className="active"><i className="fas fa-th-large"></i></a></li>
                       <li className="mr-2"><a href="#"><i className="fas fa-list"></i></a></li>
-                      <li className="mr-2">Showing {filteredProducts.length} results</li>
+                      <li className="mr-2">Affichage de  {filteredProducts.length} resultats</li>
                     </ul>
                     
 
@@ -223,7 +222,7 @@ function ProductList() {
                         <input
                           type="search"
                           className="form-control"
-                          placeholder="Search product..."
+                          placeholder="Rechercher un produit..."
                           value={searchTerm}
                           onChange={(e) => setSearchTerm(e.target.value)}
                         />
@@ -240,7 +239,7 @@ function ProductList() {
 								</ul>
 							</section> */}
                         <section className="widget mb-4" style={{ maxWidth: '300px' }}>
-        <h3 className="headingVII fwEbold text-uppercase mb-3">Filter by price</h3>
+        <h3 className="headingVII fwEbold text-uppercase mb-3">Filtrer par prix</h3>
 
         <form
           action="#"
@@ -266,7 +265,7 @@ function ProductList() {
 
         
                                     <section className="widget mb-9">
-                                        <h3 className="headingVII fwEbold text-uppercase mb-6">top rate</h3>
+                                        <h3 className="headingVII fwEbold text-uppercase mb-6">Les mieux notés</h3>
                                         <ul className="list-unstyled recentListHolder mb-0 overflow-hidden">
                                             <li className="mb-6 d-flex flex-nowrap">
                                                 <div className="alignleft">

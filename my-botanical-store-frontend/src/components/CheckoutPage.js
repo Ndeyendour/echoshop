@@ -61,13 +61,11 @@ const CheckoutPage = () => {
             <div className="container">
               <div className="row">
                 <div className="col-12 pt-lg-23 pt-md-15 pt-sm-10 pt-6 text-center">
-                  <h1 className="headingIV fwEbold playfair mb-4">My Cart</h1>
+                  <h1 className="headingIV fwEbold playfair mb-4">Caisse</h1>
                   <ul className="list-unstyled breadCrumbs d-flex justify-content-center">
-                    <li className="mr-sm-2 mr-1"><Link to="/">Home</Link></li>
+                    <li className="mr-sm-2 mr-1"><Link to="/">Produit</Link></li>
                     <li className="mr-sm-2 mr-1">/</li>
-                    <li className="mr-sm-2 mr-1"><Link to="/product">Product</Link></li>
-                    <li className="mr-sm-2 mr-1">/</li>
-                    <li className="active">checkout</li>
+                    <li className="active">caisse</li>
                   </ul>
                 </div>
               </div>
@@ -76,11 +74,11 @@ const CheckoutPage = () => {
           <br />
           <br />
         <div className="checkout-container">
-            <h1>Checkout</h1>
+            <h1>Caisse</h1>
 
             {/* Résumé du panier */}
             <div className="cart-summary">
-                <h2>Your Cart</h2>
+                <h2>Ton panier</h2>
                 <ul>
                     {favorites.map(item => (
                         <li key={item._id}>
@@ -97,9 +95,9 @@ const CheckoutPage = () => {
 
             {/* Formulaire de livraison */}
             <form onSubmit={handleSubmit}>
-                <h2>Shipping Information</h2>
+                <h2>Informations de livraison</h2>
                 <div>
-                    <label>Name:</label>
+                    <label>Nom:</label>
                     <input
                         type="text"
                         name="name"
@@ -119,7 +117,7 @@ const CheckoutPage = () => {
                     />
                 </div>
                 <div>
-                    <label>Address:</label>
+                    <label>Addresse:</label>
                     <input
                         type="text"
                         name="address"
@@ -129,7 +127,7 @@ const CheckoutPage = () => {
                     />
                 </div>
                 <div>
-                    <label>City:</label>
+                    <label>Ville:</label>
                     <input
                         type="text"
                         name="city"
@@ -151,7 +149,7 @@ const CheckoutPage = () => {
 
                 {/* Méthode de paiement */}
                 <div className="payment-methods">
-                    <label>Payment Method:</label>
+                    <label>Methode de payment:</label>
                     <select
                         value={paymentMethod}
                         onChange={(e) => setPaymentMethod(e.target.value)}
