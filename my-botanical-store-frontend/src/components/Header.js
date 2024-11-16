@@ -72,7 +72,7 @@ function Header() {
 
                         <div className="col-12 col-sm-8 col-lg-8 order-lg-2 d-flex align-items-center justify-content-end"> {/* Alignement à droite pour mobile et tablette */}
                             <nav className="navbar navbar-expand-lg navbar-light p-0 pageNav2 w-100">
-                                <button className="navbar-toggler ms-auto me-3 mt-md-0 mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button className="navbar-toggler ms-auto me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
                                 <div className="collapse navbar-collapse" id="navbarNav">
