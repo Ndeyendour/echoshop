@@ -39,18 +39,23 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Détermine l'URL en fonction de l'environnement (local vs production)
         const apiUrl = process.env.NODE_ENV === 'development'
-          ? 'http://localhost:5000/products'   // URL en local
-          : 'https://my-botanical-store-backend.vercel.app/products';  // URL en production
-
+          ? 'http://localhost:5000/products'
+          : 'https://my-botanical-store-backend.vercel.app/products';
+  
         const response = await axios.get(apiUrl);
-        setProducts(response.data);
+        console.log('Données des produits récupérées:', response.data);  // Ajout du log ici
+  
+        if (response.data && response.data.length > 0) {
+          setProducts(response.data);
+        } else {
+          console.log('Aucun produit trouvé.');
+        }
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Erreur lors de la récupération des produits:', error);
       }
     };
-
+  
     fetchProducts();
   }, []);
   

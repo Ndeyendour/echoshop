@@ -29,7 +29,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // a remplacer app.use(cors()); par app.use(cors({
 //   origin: 'https://echoshop-frontend.vercel.app'  // URL de votre frontend
 // })); une fois termine
-app.use(cors());
+app.use(cors({origin:'https://my-botanical-store-frontend.vercel.app'}));
 app.use(bodyParser.json());
 
 // Servir des fichiers statiques à partir du dossier 'assets'
