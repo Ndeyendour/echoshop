@@ -21,7 +21,7 @@ Sur la **page des produits**, les utilisateurs peuvent :
 - **Filtrage par prix** : Les utilisateurs peuvent spécifier un prix minimum et un prix maximum pour filtrer les produits par gamme de prix.
 - **Recherche par nom de produit** : Un champ de recherche permet aux utilisateurs de trouver un produit par son nom.
 - **Affichage des résultats filtrés** : Les produits qui correspondent aux critères de recherche sont dynamiquement filtrés et affichés.
-- 
+  
 ![image alt](https://github.com/Ndeyendour/echoshop/blob/71446eb0c263865fe4eeec21e9d4dbfe4788e994/my-botanical-store-frontend/public/images/produit.PNG)
 
 ### 3. Panier (Cart)
@@ -40,7 +40,7 @@ Voici un aperçu de la fonctionnalité du panier :
 - **Suppression d'articles** : Chaque produit dans le panier possède une option pour le supprimer du panier.
 - **Vue détaillée du panier** : Un récapitulatif du panier, y compris le nom des produits, leur prix, la quantité et le prix total, est affiché.
 #### Capture d'écran de la page du Panier
-![Page du Panier](./images/cart-page.png)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/71446eb0c263865fe4eeec21e9d4dbfe4788e994/my-botanical-store-frontend/public/images/produit.PNG)
 
 ### 4. Favoris
 
