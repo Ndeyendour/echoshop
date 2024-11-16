@@ -22,7 +22,7 @@ Sur la **page des produits**, les utilisateurs peuvent :
 - **Recherche par nom de produit** : Un champ de recherche permet aux utilisateurs de trouver un produit par son nom.
 - **Affichage des résultats filtrés** : Les produits qui correspondent aux critères de recherche sont dynamiquement filtrés et affichés.
 - 
-![image alt](./images/product-page.png)
+![image alt](https://github.com/Ndeyendour/echoshop/blob/71446eb0c263865fe4eeec21e9d4dbfe4788e994/my-botanical-store-frontend/public/images/produit.PNG)
 
 ### 3. Panier (Cart)
 
