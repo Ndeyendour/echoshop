@@ -113,6 +113,57 @@ Le portfolio en ligne a été mis à jour avec les dernières réalisations, y c
 Découvrez EcoShop sur figma : [echoShop dans figma](https://www.figma.com/design/VBbEK2eOyipe9bwWKPvRnX/Untitled?t=O92XX7zKLXai6ldd-0)
 
 
+---
+# Documentation de l'API des Produits
+
+Cette API permet de gérer les produits dans votre application, avec des opérations telles que la récupération, l'ajout, la mise à jour, la suppression, ainsi que la recherche et le filtrage des produits par différents critères.
+
+## 1. Récupérer tous les produits
+- **Méthode** : GET
+- **URL** : `/products`
+- **Description** : Récupère la liste de tous les produits disponibles dans la base de données.
+
+## 2. Ajouter un nouveau produit
+- **Méthode** : POST
+- **URL** : `/products`
+- **Description** : Ajoute un nouveau produit avec des informations comme le nom, la description, le prix, la catégorie, etc.
+
+## 3. Mettre à jour un produit
+- **Méthode** : PUT
+- **URL** : `/products/:id`
+- **Description** : Met à jour un produit existant en fonction de son identifiant.
+
+## 4. Récupérer un produit par ID
+- **Méthode** : GET
+- **URL** : `/products/:id`
+- **Description** : Récupère un produit spécifique à partir de son identifiant unique.
+
+## 5. Supprimer un produit
+- **Méthode** : DELETE
+- **URL** : `/products/:id`
+- **Description** : Supprime un produit de la base de données en utilisant son identifiant.
+
+## 6. Rechercher des produits par nom
+- **Méthode** : GET
+- **URL** : `/products/search`
+- **Description** : Recherche des produits en fonction de leur nom.
+
+## 7. Filtrer des produits par prix
+- **Méthode** : GET
+- **URL** : `/products/filter`
+- **Description** : Filtre les produits selon une plage de prix spécifiée.
+
+## 8. Filtrer des produits par catégorie et/ou nom
+- **Méthode** : GET
+- **URL** : `/categories`
+- **Description** : Filtre les produits par leur catégorie et/ou leur nom.
+
+## Gestion des erreurs
+Les erreurs suivantes peuvent être renvoyées par l'API :
+
+- **400 Bad Request** : Lorsque la requête est mal formée ou que des paramètres sont manquants.
+- **404 Not Found** : Lorsque l'élément (produit) recherché n'est pas trouvé.
+- **500 Internal Server Error** : Lorsque le serveur rencontre une erreur inattendue (souvent liée à la base de données ou à une mauvaise configuration).
 
  
 ---
