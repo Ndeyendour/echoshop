@@ -39,7 +39,7 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/products');
+        const response = await axios.get('https://my-botanical-store-backend.vercel.app/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
