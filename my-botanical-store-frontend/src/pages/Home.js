@@ -131,7 +131,17 @@ function Home(){
 				</div>
 				</div>
 				<div>
-				<div className="align w-100 bgCover" style={{ backgroundImage: 'url("images/b-bg5.jpg")' }}>
+				<div
+					className="align w-100 bgCover"
+					style={{
+						backgroundImage: 'url("images/b-bg5.jpg")',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						minHeight: '100vh',
+					}}
+					>
+
+
 					<div className="container position-relative holder pt-14">
 					<div className="row">
 						<div className="col-12 text-center">
