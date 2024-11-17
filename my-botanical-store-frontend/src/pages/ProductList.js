@@ -137,7 +137,7 @@ function ProductList() {
                     <ul className="list-unstyled viewFilterLinks d-flex flex-nowrap align-items-center">
                       <li className="mr-2"><a href="#" className="active"><i className="fas fa-th-large"></i></a></li>
                       <li className="mr-2"><a href="#"><i className="fas fa-list"></i></a></li>
-                      <li className="mr-2">Affichage de  {filteredProducts.length} resultats</li>
+                      <li className="mr-2">Affichage des resultats</li>
                     </ul>
                     
 
