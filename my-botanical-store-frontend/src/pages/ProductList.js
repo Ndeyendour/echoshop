@@ -39,21 +39,15 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Détermine l'URL en fonction de l'environnement (local vs production)
-        const apiUrl = process.env.NODE_ENV === 'development'
-          ? 'http://localhost:5000/products'   // URL en local
-          : 'https://my-botanical-store-backend.vercel.app/products';  // URL en production
-
-        const response = await axios.get(apiUrl);
+        const response = await axios.get('https://my-botanical-store-backend.vercel.app/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
       }
     };
-
     fetchProducts();
   }, []);
-  
+
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
     (selectedCategory === "" || product.category === selectedCategory) &&

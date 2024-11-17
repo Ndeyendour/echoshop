@@ -42,24 +42,17 @@ function Home(){
     navigate("/product"); // Redirige vers la page produit
   };
   
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        // Vérifier l'environnement et choisir l'URL correcte
-        const apiUrl = process.env.NODE_ENV === 'development' 
-          ? 'http://localhost:5000/products' 
-          : 'https://my-botanical-store-backend.vercel.app/products';
-
-        const response = await axios.get(apiUrl);
-        setProducts(response.data);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      }
-    };
-    
-    fetchProducts();
-  }, []);  // Le tableau vide [] permet d'exécuter cet effet une seule fois au montage du composant.
-
+	useEffect(() => {
+	  const fetchProducts = async () => {
+		try {
+		  const response = await axios.get('https://my-botanical-store-backend.vercel.app/products');
+		  setProducts(response.data);
+		} catch (error) {
+		  console.error('Error fetching products:', error);
+		}
+	  };
+	  fetchProducts();
+	}, []);
   
 	const filteredProducts = products.filter(product =>
 	  product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&

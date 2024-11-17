@@ -201,7 +201,7 @@ app.get('/products/filter', async (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Bienvenue sur l\'API de mon projet !');
+  res.json('Bienvenue sur l\'API de mon projet !');
 });
 
 // Démarrer le serveur
