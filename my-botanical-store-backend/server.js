@@ -206,7 +206,7 @@ app.get('/', (req, res) => {
   res.send('Bienvenue sur l\'API de mon projet !');
 });
 
-// Démarrer le serveur
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// // Démarrer le serveur
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
