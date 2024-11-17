@@ -29,11 +29,9 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // a remplacer app.use(cors()); par app.use(cors({
 //   origin: 'https://echoshop-frontend.vercel.app'  // URL de votre frontend
 // })); une fois termine
-app.use(cors({origin:'https://my-botanical-store-frontend.vercel.app'}));
+app.use(cors());
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'https://ton-frontend.vercel.app',  // URL de ton frontend sur Vercel
-}));
+
 // Servir des fichiers statiques à partir du dossier 'assets'
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // Connexion à MongoDB avec l'URI de connexion MongoDB Atlas
