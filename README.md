@@ -94,7 +94,7 @@ Des tests peuvent être effectués en utilisant l'outil de test intégré à Rea
 
 ---
  ## Lien vers le projet déployé
-Découvrez EcoShop en ligne : [https://echoshop-frontend.vercel.app/](https://echoshop-frontend.vercel.app/)
+Découvrez EcoShop en ligne : [https://cute-dango-e31219.netlify.app/](https://cute-dango-e31219.netlify.app/)
 
 ## Mise à jour du portfolio
 Le portfolio en ligne a été mis à jour avec les dernières réalisations, y compris EcoShop. Vous pouvez consulter le projet et d'autres exemples sur [https://ndeyendour.github.io/prtfolio/#project](https://ndeyendour.github.io/prtfolio/#project) 
